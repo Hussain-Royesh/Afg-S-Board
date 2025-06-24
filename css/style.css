@@ -181,3 +181,15 @@ body::before{
   color: black;
   width: 300px;
 }
+#left {
+  background-color: blue;
+  border: 2px solid;
+}
+#middle{
+  background-color: gray;
+  border: 2px solid;
+}
+#right {
+  background-color: bisque;
+  border: 2px solid;
+}
