@@ -181,3 +181,33 @@ body::before{
   color: black;
   width: 300px;
 }
+
+#checkbox {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background-color: wheat;
+  padding: 10px;
+  margin: 40px;
+} 
+#visa #mastercard #paypal {
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+ display: flexbox;
+  padding: 10px;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 20px;
+  color: black;
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  background-color: bisque;
+}

@@ -97,4 +97,38 @@ const result = document.getElementById("result");
 submit.addEventListener("click", checkAge);
 
 
+let checkbox1 = document.getElementById("checkbox1");
+let mysubmit = document.getElementById("mysubmit");
+let result1 = document.getElementById("result1");
+let visa = document.getElementById("visa");
+let mastercard = document.getElementById("mastercard");
+let paypal = document.getElementById("paypal");
+let subscribe = document.getElementById("subscribe");
+
+mysubmit.onclick = function(event) {
+    if (checkbox1.checked) {
+        subscribe.textContent = "Checkbox is checked.";
+        subscribe.style.color = "green";
+    }
+    else if(visa.checked) {
+        result1.textContent = "Paid By Visa.";
+    }
+    else if(mastercard.checked) {
+        result1.textContent = "Paid By Mastercard.";
+    }
+    else if(paypal.checked) {
+        result1.textContent = "Paid By Paypal.";
+    }
+    else if (checkbox1.checked && !visa.checked && !mastercard.checked && !paypal.checked) {
+        result1.textContent = "Please select a payment method.";}
+    
+    
+    else {
+        subscribe.textContent = "Checkbox is not checked.";
+        subscribe.style.color = "red";
+    }
+};
+
+
+
 
